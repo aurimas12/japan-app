@@ -1,0 +1,1 @@
+teserract=r"D:\Tesseract-OCR\tesseract.exe"
