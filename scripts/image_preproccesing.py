@@ -1,3 +1,4 @@
+import os
 import cv2
 import pytesseract
 from constants import teserract
@@ -6,7 +7,9 @@ from dictionaries import hiragana_dict
 # Nurodykite teisingą Tesseract kelią
 pytesseract.pytesseract.tesseract_cmd = teserract
 
-image = cv2.imread(r"D:\\Projects\\japan-app\\scripts\\data\\hiragana-o.png")  # Naudok bet kokį paveikslėlį su hiragana
+
+
+image = cv2.imread(r"D:\Projects\japan-app\scripts\data\hiragana-e.PNG")  # Naudok bet kokį paveikslėlį su hiragana
 text = pytesseract.image_to_string(image, lang="jpn")
 
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)

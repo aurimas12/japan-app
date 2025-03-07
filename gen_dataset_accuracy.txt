@@ -1,0 +1,35 @@
+1. Naudoti daugiau pažangių triukšmų metodų:
+
+    Deep Gauss Noise (giluminio mokymosi triukšmas): Bandyk sukurti giluminio triukšmo efektą, kuris būtų mažiau pastebimas žmogaus akiai, tačiau būtų naudingas modelio treniravimui. Tai gali apimti ne tik paprastą Gauss’ą, bet ir sinuso bangas arba kitus triukšmo tipus.
+    Poisson triukšmas: Galima pridėti Poisson triukšmą, kuris dažnai būna naudojamas nuotraukose, kur yra mažas apšvietimas arba didelis triukšmas.
+
+Iššūkis: Bandyk sukurti įvairių triukšmų tipus (pvz., Poisson triukšmą, spektrinį triukšmą) ir išbandyti, kaip jie veikia modelio tikslumą.
+2. Kombinuoti kelis augmentacijos metodus:
+
+    Dabar naudojami keli pagrindiniai augmentacijos metodai (pvz., pasukimas, triukšmas), tačiau galima juos derinti sudėtingesniais būdais, kad pasiektumėte dar įvairesnius vaizdus.
+    Sudėtingesnės transformacijos: Sukurk transformacijas, kurios apimtų perspektyvos keitimą kartu su pasukimais arba praplatinimais. Tai gali apimti geometrinius iškraipymus, kuriuos naudoti kartu su kitomis augmentacijomis.
+    Elastingieji deformacijos: Įgyvendink elastingąsias deformacijas (Elastic Transformations), kurios sukuria realistiškas nuotraukų deformacijas (panašu į tai, kas nutinka, kai nuotraukos yra ištemptos arba sudrėksta).
+
+Iššūkis: Bandyk sukurti kompleksinius augmentacijų junginius, kad nuotraukos būtų labiau variuojančios. Tai galėtų apimti pasukimus kartu su geometrinėmis transformacijomis ir sudėtiniais filtrų naudojimais.
+3. Rašmenų stiliaus ir šrifto variacija:
+
+    Rašmenų tipai: Bandyk pridėti skirtingų rašmenų šriftų, kad modelis galėtų išmokti atpažinti įvairias raides, nepriklausomai nuo šrifto. Tai galima padaryti įrašant įvairius šriftus ar generuojant raides su skirtingais šriftais.
+    Morfologinės variacijos: Suprasti, kaip raides galima šiek tiek iškraipyti (pavyzdžiui, naudojant šiurkščius šriftus, 3D efektus ar kitas stilistines variacijas), kad modelis sugebėtų geriau atpažinti jas įvairiuose kontekstuose.
+
+Iššūkis: Sukurk kodą, kuris automatiškai generuotų nuotraukas su skirtingais šriftais ir jų variacijomis. Pabandyk integruoti bent 5-10 skirtingų šriftų, kad raides galėtum sugeneruoti įvairiais stiliais.
+4. Simuliuoti realius fonus ir apšvietimą:
+
+    Skirtingi fonai ir apšvietimo sąlygos: Įgyvendink fonų keitimą pagal įvairius apšvietimo nustatymus (pvz., stiprus apšvietimas, silpnas apšvietimas, šešėliai, spalvų kontrastai ir pan.).
+    Neįprasti fonai: Bandyk pridėti fonus, kurie ne tik būtų įvairūs, bet ir atrodytų realistai. Pavyzdžiui, pridėti ne tik baltus ar pilkus fonus, bet ir vaizdus iš tikrų scenų (su objektais, užrašais ir t.t.).
+
+Iššūkis: Sukurk fonų generatorių, kuris galėtų imituoti tikrus pasaulinius fonus su įvairiu apšvietimu. Tai galėtų būti įgyvendinama naudojant atsitiktines fono tekstūras ir jų apšvietimo sąlygas.
+5. Nauji filtrai ir spalvų transformacijos:
+
+    Pritaikyti įvairius spalvų filtrus: Išbandyk spalvų transformacijas, kurios gali gerai simuliuoti senus fotoaparatus arba skaitmeninius filtrus (pvz., „Instagram“ efektus).
+    Žemo kontrasto filtrai: Išbandyk filtrus, kurie keičia kontrastą, kad nuotraukos atrodytų silpnesnės arba ryškesnės, ir stebėk, kaip tai veikia modelį.
+
+Iššūkis: Sukurk įprastų spalvų filtrų rinkinį, pavyzdžiui, „vintage“, „retro“, „black and white“ ir pan., ir taikyk juos ant sugeneruotų raidžių.
+6. Išskirtiniai šriftų ir raštų efektai:
+
+    Šriftų su skirtingais tekstūromis ir užrašais: Sukurk efekto filtrus, kurie imituoja raides su tekstūromis arba užrašais (pvz., rankraštis, antspaudai, piešiniai ant popieriaus ir t.t.).
+    Distortions and Warping: Implementuok šrifto iškraipymus, kur raidės atrodo tarsi deformuotos, susmulkintos ar šiek tiek iškreiptos, o tai padės modeliuoti įvairias rašmenų variacijas.
